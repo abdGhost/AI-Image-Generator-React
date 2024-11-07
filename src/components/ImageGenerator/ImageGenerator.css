@@ -1,0 +1,103 @@
+.ai-image-generator {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.ai-image-generator .header {
+  font-size: 70px;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.ai-image-generator .header span {
+  color: #de1b89;
+  font-weight: 600;
+}
+
+.ai-image-generator .img-loading {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-image-generator .img-loading img {
+  width: 512px;
+}
+
+.ai-image-generator .search-box {
+  display: flex;
+  width: 1000px;
+  height: 95px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  background: #1f3540;
+}
+
+.ai-image-generator .search-box .search-input {
+  width: 600px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  padding-left: 35px;
+  margin-right: 35px;
+}
+.ai-image-generator .search-box .search-input::placeholder {
+  color: #999;
+}
+
+.ai-image-generator .search-box .generate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 85px;
+  font-size: 20px;
+  border-radius: 50px;
+  background: #de1b89;
+  color: white;
+  cursor: pointer;
+}
+.ai-image-generator .search-box .generate-btn:hover {
+  background: #e42a93;
+  border: #999 2px solid;
+}
+
+.loading-bar {
+  width: 0;
+  height: 8px;
+  background: #de1b89;
+}
+
+.loading-bar-loop {
+  height: 8px;
+  background: #de1b89;
+  animation: loadingLoop 2s ease-in-out infinite;
+}
+
+.loading-text {
+  font-size: 18px;
+}
+
+.display-none {
+  display: none;
+}
+
+@keyframes loadingLoop {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
